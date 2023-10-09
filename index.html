@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1 class="header">Jabalpur Engineering College</h1>
+        <h1 class="header">C.R. Elections 2023</h1>
+        
+        <!-- Input for voter's name -->
+        <label class="label" for="name">Enter Your Name:</label>
+        <input class="input" type="text" id="name" required>
+
+        <!-- Candidate selection list -->
+        <h2 class="candidate-list-header">Select a Candidate:</h2>
+        <ul class="candidate-list">
+            <li>
+                <span class="candidate-name">Adarsh Shrivastava</span>
+                <button class="tick-button" data-candidate="Adarsh Shrivastava">✓</button>
+            </li>
+            <li>
+                <span class="candidate-name">Ayush Patel</span>
+                <button class="tick-button" data-candidate="Ayush Patel">✓</button>
+            </li>
+            <li>
+                <span class="candidate-name">Pragya Tiwari</span>
+                <button class="tick-button" data-candidate="Pragya Tiwari">✓</button>
+            </li>
+            <li>
+                <span class="candidate-name">Saransh Payas</span>
+                <button class="tick-button" data-candidate="Saransh Payas">✓</button>
+            </li>
+        </ul>
+
+        <!-- Button for voting -->
+        <button class="button" id="voteButton">Vote</button>
+
+        <!-- Display vote count for each candidate -->
+        <h2 class="vote-count-header">Vote Count:</h2>
+        <ul class="vote-count" id="voteCount">
+            <!-- Vote count items will be displayed here -->
+        </ul>
+    </div>
+    
+    <!-- Introduction -->
+    <div class="introduction">
+        <p>Designed by:- Ayan Ahmed Siddique</p>
+        <p>Mechatronics Engineering, 1st Semester</p>
+    </div>
+
+    <!-- Show Results Button -->
+    <button class="show-results-button" id="showResultsButton">Show Results</button>
+
+    <!-- Password Input Container (Initially Hidden) -->
+    <div class="password-input-container" id="passwordInputContainer">
+        <label class="password-label" for="password">Enter Password:</label>
+        <input class="password-input" type="password" id="password">
+        <button class="password-submit-button" id="passwordSubmitButton">Submit</button>
+    </div>
+
+    <!-- Result Container (Initially Hidden) -->
+    <div class="result-container" id="resultContainer">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <!-- Reset button outside the container -->
+    <button class="reset-button" id="resetButton">Reset</button>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
