@@ -135,6 +135,7 @@ body {
     padding: 12px 24px;
     font-size: 20px;
     margin-top: 20px;
+    margin-left: 20px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -175,6 +176,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    left : 20px
 }
 
 .password-submit-button:hover {
@@ -191,8 +193,23 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.reset-button {
+/* Style for the reset button */
+.action-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
     position: absolute;
-    bottom: 0px;
-    right: 5px;
+    right: 20px;
+    z-index: 1;
 }
+
+/* Add any other styles you need for the reset button */
+
