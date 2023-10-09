@@ -78,6 +78,7 @@ document.getElementById('resetButton').addEventListener('click', function() {
         'Adarsh Shrivastava': 0,
         'Ayush Patel': 0,
         'Pragya Tiwari': 0,
+        'Saksham Tiwari': 0,
         'Saransh Payas': 0
     });
 
@@ -119,4 +120,5 @@ document.getElementById('showResultsButton').addEventListener('click', function(
     } else {
         alert('Incorrect password. Please try again.');
     }
+
 });
